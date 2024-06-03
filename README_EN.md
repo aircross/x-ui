@@ -1,8 +1,10 @@
 # X-UI
+ [![Go Report Card](https://goreportcard.com/badge/github.com/aircross/x-ui)](https://goreportcard.com/report/github.com/aircross/x-ui) [![Downloads](https://img.shields.io/github/downloads/aircross/x-ui/total?label=downloads&logo=github&style=flat-square)](https://img.shields.io/github/downloads/aircross/x-ui/total?label=downloads&logo=github&style=flat-square)
+简体中文|[ENGLISH](https://github.com/aircross/x-ui/blob/main/README_EN.md)  
 
-[简体中文](./README.md)| ENGLISH  
+[简体中文](https://github.com/aircross/x-ui/blob/main/README.md)| ENGLISH  
 X-UI is a webUI panel based on Xray-core which supports multi protocols and multi users  
-This project is a fork of [vaxilu&#39;s project](https://github.com/vaxilu/x-ui),and it is a experiental project which used by myself for learning golang   
+This project is a fork of [FranzKafkaYu&#39;s project](https://github.com/FranzKafkaYu/x-ui),and it is a experiental project which used by myself for learning golang   
 If you need more language options ,please open a issue and let me know that
 
 # Changes   
@@ -41,18 +43,37 @@ If you need more language options ,please open a issue and let me know that
 - support telegram bot notify and control
 - more functions in control menu  
 
-for more detailed usages,plz see [WIKI](https://github.com/FranzKafkaYu/x-ui/wiki)
+for more detailed usages,plz see [WIKI](https://github.com/aircross/x-ui/wiki)
 
 # Installation
 Make sure your system `bash` and `curl` and `network` are ready,here we go
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install.sh)
 ```  
 For English Users,please use the following command to install English supported version:  
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install_en.sh)
 ``` 
+###Deploy with Docker
+Install docker
+
+    ```shell
+    curl -fsSL https://get.docker.com | sh
+    ```
+
+Run in Docker
+    ```shell
+    mkdir -p /opt/docker/x-ui
+    docker run \
+        --name x-ui \
+        -d \
+        --network host \
+        --restart=unless-stopped \
+        -v /opt/docker/x-ui:/etc/x-ui/ \
+        aircross/x-ui-docker:latest
+    ```
+
 
 ## Shortcut  
 After Installation，you can input `x-ui`to enter control menu，current menu details：
@@ -104,17 +125,17 @@ please input a legal number[0-16]:
 
 # Credits
 - [vaxilu/x-ui](https://github.com/vaxilu/x-ui)
+- [FranzKafkaYu/x-ui](https://github.com/FranzKafkaYu/x-ui)
 - [XTLS/Xray-core](https://github.com/XTLS/Xray-core)
 - [telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api)  
 
 # Sponsor  
 
 if you want to purchase some virtual servers,you can purchase by my aff link:   
-- [BandwagonHost](https://bandwagonhost.com/aff.php?aff=65703)     
-- [Cloudcone](https://app.cloudcone.com/?ref=7536)  
-- [SpartanHost](https://billing.spartanhost.net/aff.php?aff=1875)  
-
+- [BandwagonHost](https://bandwagonhost.com/aff.php?aff=57739)     
+- [Cloudcone](https://app.cloudcone.com/?ref=2227)  
+- [SpartanHost](https://billing.spartanhost.net/aff.php?aff=1156)  
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/FranzKafkaYu/x-ui.svg)](https://starchart.cc/FranzKafkaYu/x-ui)
+[![Stargazers over time](https://starchart.cc/aircross/x-ui.svg)](https://starchart.cc/aircross/x-ui)
