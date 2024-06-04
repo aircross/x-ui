@@ -1,7 +1,6 @@
 # X-UI
- [![Go Report Card](https://goreportcard.com/badge/github.com/aircross/x-ui)](https://goreportcard.com/report/github.com/aircross/x-ui) [![Downloads](https://img.shields.io/github/downloads/aircross/x-ui/total?label=downloads&logo=github&style=flat-square)](https://img.shields.io/github/downloads/aircross/x-ui/total?label=downloads&logo=github&style=flat-square)
-简体中文|[ENGLISH](https://github.com/aircross/x-ui/blob/main/README_EN.md)  
-
+ [![Go Report Card](https://goreportcard.com/badge/github.com/aircross/x-ui)](https://goreportcard.com/report/github.com/aircross/x-ui)[![Docker Pulls](https://img.shields.io/docker/pulls/aircross/x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/x-ui.svg?style=flat-square)
+ 
 [简体中文](https://github.com/aircross/x-ui/blob/main/README.md)| ENGLISH  
 X-UI is a webUI panel based on Xray-core which supports multi protocols and multi users  
 This project is a fork of [FranzKafkaYu&#39;s project](https://github.com/FranzKafkaYu/x-ui),and it is a experiental project which used by myself for learning golang   
