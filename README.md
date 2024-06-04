@@ -1,5 +1,6 @@
 # X-UI
  [![Go Report Card](https://goreportcard.com/badge/github.com/aircross/x-ui)](https://goreportcard.com/report/github.com/aircross/x-ui) [![Downloads](https://img.shields.io/github/downloads/aircross/x-ui/total?label=downloads&logo=github&style=flat-square)](https://img.shields.io/github/downloads/aircross/x-ui/total?label=downloads&logo=github&style=flat-square)
+ 
 简体中文|[ENGLISH](https://github.com/aircross/x-ui/blob/main/README_EN.md)  
 
 > 声明：该项目仅供个人学习、交流，请遵守当地法律法规,勿用于非法用途;请勿用于生产环境  
@@ -17,6 +18,7 @@
 - [文档目录](#文档目录)
 - [功能介绍](#功能介绍)
 - [一键安装](#一键安装)
+    - [客户端推荐](#客户端推荐)
 - [效果预览](#效果预览)
 - [快捷方式](#快捷方式)
 - [配置要求](#配置要求)
@@ -77,6 +79,38 @@ bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install.s
         -v /opt/docker/x-ui:/etc/x-ui/ \
         aircross/x-ui-docker:latest
     ```
+
+
+### 客户端推荐  
+|软件名称|平台|收费/免费|下载地址|
+|--------|:-----:|:-----:|:----:|
+|v2rayNG|Adnroid|免费|[下载地址](https://github.com/2dust/v2rayNG/releases)<br /><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="165" height="64" /></a>|
+|NekoBox|Adnroid|免费|[下载地址](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)<br />注意：Google Play 版本自 2024 年 5 月起已被第三方控制，为非开源版本，请不要下载。|
+|Clash for Android|Adnroid|免费|[下载地址](https://github.com/MetaCubeX/ClashMetaForAndroid/releases)|
+||||
+|OneClick|iOS|免费|Apple Store|
+|Leaf|iOS|免费|Apple Store|
+|Shadowrocket|iOS|收费|Apple Store|
+|pepi|iOS|收费|Apple Store|
+|i2Ray|iOS|收费|Apple Store|
+|Kitsunebi|iOS|收费|Apple Store|
+|Quantumult|iOS|收费|Apple Store|
+||||
+|v2rayN|Windows|免费|[下载地址](https://github.com/2dust/v2rayN/releases)|
+|NekoRay / NekoBox For PC|Windows|免费|[下载地址](https://github.com/Matsuri|
+|Clash for Windows|Windows|免费|[下载地址](https://github.com/Z-Siqi/Clash-f|
+|clashN|Windows|免费|[下载地址](https://github.com/2dust/clashN/releases)|
+|Netch|Windows|免费|[下载地址](https://github.com/netchx/netch/releases)|
+|Qv2ray|Windows|免费|[下载地址](https://github.com/Qv2ray/Qv2ray/releases)|
+||||
+|NekoRay|Linux|未知|未知|
+|Clash Verge|Linux|未知|未知|
+|Qv2ray|Linux|未知|未知|
+|V2rayA|Linux|未知|未知|
+|ClashX Pro|MacOS|未知|未知|
+|Qv2ray|MacOS|未知|未知|
+|V2rayX|MacOS|未知|未知|
+|V2rayU|MacOS|未知|未知|
 
 # 效果预览  
 `面板使用`:  

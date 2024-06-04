@@ -74,6 +74,42 @@ Run in Docker
         aircross/x-ui-docker:latest
     ```
 
+### Client
+
+|Name|platform|Paid/Free|Download Link|
+|--------|:-----:|:-----:|:----:|
+|v2rayNG|Adnroid|Free|[Download Here](https://github.com/2dust/v2rayNG/releases)<a href="https://play.google.com/store/apps/details?id=com.v2ray.ang">
+<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="165" height="64" />
+</a>|
+|NekoBox|Adnroid|Free|[Download Here](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)Warning:Don't Download from Google Play, since May-2024, that upload from unknow gay|
+
+|Clash for Android|Adnroid|Free|[Download Here](https://github.com/MetaCubeX/ClashMetaForAndroid/releases)|
+||||
+|OneClick|iOS|Free|Apple Store|
+|Leaf|iOS|Free|Apple Store|
+|Shadowrocket|iOS|Paid|Apple Store|
+|pepi|iOS|Paid|Apple Store|
+|i2Ray|iOS|Paid|Apple Store|
+|Kitsunebi|iOS|Paid|Apple Store|
+|Quantumult|iOS|Paid|Apple Store|
+||||
+|v2rayN|Windows|Free|[Download Here](https://github.com/2dust/v2rayN/releases)|
+|NekoRay / NekoBox For PC|Windows|Free|[Download Here](https://github.com/Matsuri|
+|Clash for Windows|Windows|Free|[Download Here](https://github.com/Z-Siqi/Clash-f|
+|clashN|Windows|Free|[Download Here](https://github.com/2dust/clashN/releases)|
+|Netch|Windows|Free|[Download Here](https://github.com/netchx/netch/releases)|
+|Qv2ray|Windows|Free|[Download Here](https://github.com/Qv2ray/Qv2ray/releases)|
+||||
+|NekoRay|Linux|unknow|unknow|
+|Clash Verge|Linux|unknow|unknow|
+|Qv2ray|Linux|unknow|unknow|
+|V2rayA|Linux|unknow|unknow|
+|ClashX Pro|MacOS|unknow|unknow|
+|Qv2ray|MacOS|unknow|unknow|
+|V2rayX|MacOS|unknow|unknow|
+|V2rayU|MacOS|unknow|unknow|
+
+  
 
 ## Shortcut  
 After Installation，you can input `x-ui`to enter control menu，current menu details：
