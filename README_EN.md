@@ -94,8 +94,8 @@ docker run \
 |Quantumult|iOS|Paid|Apple Store|
 ||||
 |v2rayN|Windows|Free|[Download Here](https://github.com/2dust/v2rayN/releases)|
-|NekoRay / NekoBox For PC|Windows|Free|[Download Here](https://github.com/Matsuri|
-|Clash for Windows|Windows|Free|[Download Here](https://github.com/Z-Siqi/Clash-f|
+|NekoRay / NekoBox For PC|Windows|Free|[Download Here](https://github.com/MatsuriDayo/nekoray/releases)|
+|Clash for Windows|Windows|Free|[Download Here](https://github.com/Z-Siqi/Clash-for-Windows_Chinese/releases)|
 |clashN|Windows|Free|[Download Here](https://github.com/2dust/clashN/releases)|
 |Netch|Windows|Free|[Download Here](https://github.com/netchx/netch/releases)|
 |Qv2ray|Windows|Free|[Download Here](https://github.com/Qv2ray/Qv2ray/releases)|
