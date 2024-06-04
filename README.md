@@ -1,5 +1,5 @@
 # X-UI
- [![Go Report Card](https://goreportcard.com/badge/github.com/aircross/x-ui)](https://goreportcard.com/report/github.com/aircross/x-ui) [![Downloads](https://img.shields.io/github/downloads/aircross/x-ui/total?label=downloads&logo=github&style=flat-square)](https://img.shields.io/github/downloads/aircross/x-ui/total?label=downloads&logo=github&style=flat-square)
+ [![Go Report Card](https://goreportcard.com/badge/github.com/aircross/x-ui)](https://goreportcard.com/report/github.com/aircross/x-ui) [![Docker Pulls](https://img.shields.io/docker/pulls/aircross/x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/x-ui.svg?style=flat-square)
  
 简体中文|[ENGLISH](https://github.com/aircross/x-ui/blob/main/README_EN.md)  
 
