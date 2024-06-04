@@ -104,7 +104,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install_en.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -123,7 +123,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install_en.sh)
     if [[ $? == 0 ]]; then
         LOGI "upgrade finished,restart completed"
         exit 0
@@ -312,7 +312,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/FranzKafkaYu/x-ui/raw/master/x-ui_en.sh
+    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/aircross/x-ui/raw/master/x-ui_en.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "update shell script failed,please check whether your server can access github"
