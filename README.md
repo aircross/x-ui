@@ -18,14 +18,13 @@
 - [文档目录](#文档目录)
 - [功能介绍](#功能介绍)
 - [一键安装](#一键安装)
-    - [客户端推荐](#客户端推荐)
+- [客户端推荐](#客户端推荐)
 - [效果预览](#效果预览)
 - [快捷方式](#快捷方式)
 - [配置要求](#配置要求)
   - [内存](#内存)
   - [OS](#os)
 - [变更记录](#变更记录)
-- [Telegram](#telegram)
 - [致谢](#致谢)
 - [广告赞助](#广告赞助)
   - [Stargazers over time](#stargazers-over-time)
@@ -61,27 +60,30 @@ bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install_e
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install.sh) 0.3.4.4   
 ```
-###使用 Docker 部署
+
+##使用 Docker 部署
 安装docker
 
-    ```shell
-    curl -fsSL https://get.docker.com | sh
-    ```
+```shell
+curl -fsSL https://get.docker.com | sh
+```
 
 运行Docker
-    ```shell
-    mkdir -p /opt/docker/x-ui
-    docker run \
-        --name x-ui \
-        -d \
-        --network host \
-        --restart=unless-stopped \
-        -v /opt/docker/x-ui:/etc/x-ui/ \
-        aircross/x-ui-docker:latest
-    ```
+
+```shell
+mkdir -p /opt/docker/x-ui
+docker run \
+    --name x-ui \
+    -d \
+    --network host \
+    --restart=unless-stopped \
+    -v /opt/docker/x-ui:/etc/x-ui/ \
+    aircross/x-ui-docker:latest
+```
 
 
-### 客户端推荐  
+# 客户端推荐  
+
 |软件名称|平台|收费/免费|下载地址|
 |--------|:-----:|:-----:|:----:|
 |v2rayNG|Adnroid|免费|[下载地址](https://github.com/2dust/v2rayNG/releases)<br /><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="165" height="64" /></a>|
@@ -253,14 +255,11 @@ xray 状态: 运行
 - 2022.04.16：增加面板设置Telegram bot功能
 - 2022.04.12：优化Telegram Bot通知提醒
 - 2022.04.06：优化安装/更新流程，增加证书签发功能，添加Telegram bot机器人推送功能
-# Telegram
-
-[订阅频道](https://t.me/CoderfanBaby)  
-[讨论群组](https://t.me/franzkafayu)
 
 # 致谢
 
 - [vaxilu/x-ui](https://github.com/vaxilu/x-ui)
+- [FranzKafkaYu/x-ui](https://github.com/FranzKafkaYu/x-ui)
 - [XTLS/Xray-core](https://github.com/XTLS/Xray-core)
 - [telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api)  
 

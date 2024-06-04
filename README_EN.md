@@ -58,23 +58,24 @@ bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install_e
 ###Deploy with Docker
 Install docker
 
-    ```shell
-    curl -fsSL https://get.docker.com | sh
-    ```
+```shell
+curl -fsSL https://get.docker.com | sh
+```
 
 Run in Docker
-    ```shell
-    mkdir -p /opt/docker/x-ui
-    docker run \
-        --name x-ui \
-        -d \
-        --network host \
-        --restart=unless-stopped \
-        -v /opt/docker/x-ui:/etc/x-ui/ \
-        aircross/x-ui-docker:latest
-    ```
 
-### Client
+```shell
+mkdir -p /opt/docker/x-ui
+docker run \
+    --name x-ui \
+    -d \
+    --network host \
+    --restart=unless-stopped \
+    -v /opt/docker/x-ui:/etc/x-ui/ \
+    aircross/x-ui-docker:latest
+```
+
+# Client
 
 |Name|platform|Paid/Free|Download Link|
 |--------|:-----:|:-----:|:----:|
@@ -153,11 +154,6 @@ please input a legal number[0-16]:
 - CentOS 7+
 - Ubuntu 16+
 - Debian 8+
-
-# Telegram
-
-[Channel](https://t.me/CoderfanBaby)  
-[Group](https://t.me/franzkafayu)
 
 # Credits
 - [vaxilu/x-ui](https://github.com/vaxilu/x-ui)
