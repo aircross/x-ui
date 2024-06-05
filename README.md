@@ -6,6 +6,11 @@
 > 声明：该项目仅供个人学习、交流，请遵守当地法律法规,勿用于非法用途;请勿用于生产环境  
 > 声明：该项目已闭源，介意者请勿使用；如您需要开源代码，请附上您的Github Profile邮箱联系  
 
+# 3X-UI
+  如果你需要使用3X-UI，可以点击这里访问：[aircross/3x-ui](https://github.com/aircross/3x-ui)  
+   [![Docker Pulls](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)
+
+
 支持单端口多用户、多协议的 xray 面板，究极缝合怪    
 通过免费的Telegram bot方便快捷地进行监控、管理你的代理服务  
 &#x26A1;`xtls-rprx-vision`与`reality`快速入手请看[这里](https://github.com/aircross/x-ui/wiki/%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE)  
@@ -15,9 +20,12 @@
 
 # 文档目录  
 - [X-UI](#x-ui)
+- [3X-UI](#3x-ui)
 - [文档目录](#文档目录)
 - [功能介绍](#功能介绍)
 - [一键安装](#一键安装)
+    - [X-UI](#x-ui-1)
+    - [3X-UI](#3x-ui-1)
 - [客户端推荐](#客户端推荐)
 - [效果预览](#效果预览)
 - [快捷方式](#快捷方式)
@@ -68,9 +76,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/aircross/x-ui/master/install.s
 curl -fsSL https://get.docker.com | sh
 ```
 
-运行Docker
+运行Docker 
+
+### X-UI
 
 ```shell
+#X-UI
 mkdir -p /opt/docker/x-ui
 docker run \
     --name x-ui \
@@ -78,7 +89,21 @@ docker run \
     --network host \
     --restart=unless-stopped \
     -v /opt/docker/x-ui:/etc/x-ui/ \
-    aircross/x-ui-docker:latest
+    aircross/x-ui:latest
+```
+
+### 3X-UI
+
+```shell
+#3X-UI
+mkdir -p /opt/docker/3x-ui
+docker run \
+    --name x-ui \
+    -d \
+    --network host \
+    --restart=unless-stopped \
+    -v /opt/docker/3x-ui:/etc/x-ui/ \
+    aircross/3x-ui:latest
 ```
 
 

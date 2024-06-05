@@ -6,6 +6,12 @@ X-UI is a webUI panel based on Xray-core which supports multi protocols and mult
 This project is a fork of [FranzKafkaYu&#39;s project](https://github.com/FranzKafkaYu/x-ui),and it is a experiental project which used by myself for learning golang   
 If you need more language options ,please open a issue and let me know that
 
+ 
+
+# 3X-UI
+  If you want to use 3X-UI，you can get it here：[aircross/3x-ui](https://github.com/aircross/3x-ui)  
+   [![Docker Pulls](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)
+
 # Changes   
 - 2023.07.18：Random Reality dest and serverNames;more detailed sniffing settings available  
 - 2023.06.10：Enable TLS will reuse panel's certs and domain;add setting for ocspStapling;refactor device limit  
@@ -63,7 +69,10 @@ curl -fsSL https://get.docker.com | sh
 
 Run in Docker
 
+### X-UI
+
 ```shell
+#X-UI
 mkdir -p /opt/docker/x-ui
 docker run \
     --name x-ui \
@@ -71,7 +80,21 @@ docker run \
     --network host \
     --restart=unless-stopped \
     -v /opt/docker/x-ui:/etc/x-ui/ \
-    aircross/x-ui-docker:latest
+    aircross/x-ui:latest
+```
+
+### 3X-UI
+
+```shell
+#3X-UI
+mkdir -p /opt/docker/3x-ui
+docker run \
+    --name x-ui \
+    -d \
+    --network host \
+    --restart=unless-stopped \
+    -v /opt/docker/3x-ui:/etc/x-ui/ \
+    aircross/3x-ui:latest
 ```
 
 # Client
