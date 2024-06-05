@@ -121,7 +121,7 @@ docker exec \
 #默认使用letsencrypt作废证书签发服务
 ```
 
-x-ui的安装添加一行
+x-ui的Docker执行命令添加下面这一行
 
 ```
     -v /opt/docker/acme.sh:/acme.sh/ \
