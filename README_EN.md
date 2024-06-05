@@ -12,8 +12,8 @@ If you need more language options ,please open a issue and let me know that
    [![Docker Pulls](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)
 
 
-Default visit prot:http://host:54321
-Default username/password：admin/admin
+Default visit prot:http://host:54321    
+Default username/password：admin/admin    
 
 # Changes   
 - 2023.07.18：Random Reality dest and serverNames;more detailed sniffing settings available  
