@@ -11,6 +11,10 @@ If you need more language options ,please open a issue and let me know that
   If you want to use 3X-UI，you can get it here：[aircross/3x-ui](https://github.com/aircross/3x-ui)  
    [![Docker Pulls](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)
 
+
+Default visit prot:http://host:54321
+Default username/password：admin/admin
+
 # Changes   
 - 2023.07.18：Random Reality dest and serverNames;more detailed sniffing settings available  
 - 2023.06.10：Enable TLS will reuse panel's certs and domain;add setting for ocspStapling;refactor device limit  
