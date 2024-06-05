@@ -27,6 +27,7 @@
 - [一键安装](#一键安装)
     - [X-UI](#x-ui-1)
     - [3X-UI](#3x-ui-1)
+    - [如果你需要安装ACME.SH用户管理SSL证书的Docker，可以执行一下命令](#如果你需要安装acmesh用户管理ssl证书的docker可以执行一下命令)
 - [客户端推荐](#客户端推荐)
 - [效果预览](#效果预览)
 - [快捷方式](#快捷方式)
@@ -107,6 +108,25 @@ docker run \
     aircross/3x-ui:latest
 ```
 
+### 如果你需要安装ACME.SH用户管理SSL证书的Docker，可以执行一下命令
+
+```
+mkdir -p /opt/docker/acme.sh
+docker run -itd -v /opt/docker/acme.sh:/acme.sh --net=host --restart=unless-stopped --name=acme.sh -v /var/run/docker.sock:/var/run/docker.sock neilpang/acme.sh daemon
+docker exec \
+    -e CF_Email=你的CF邮箱 \
+    -e CF_Key=你的CF API Key  \
+    acme.sh --issue -d demo.com  --dns dns_cf  \
+    --server letsencrypt
+#默认使用letsencrypt作废证书签发服务
+```
+
+x-ui的安装添加一行
+
+```
+    -v /opt/docker/acme.sh:/acme.sh/ \
+    #在x-ui的docker里面域名证书的路径为/acme.sh/
+```
 
 # 客户端推荐  
 
