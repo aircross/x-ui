@@ -10,8 +10,8 @@
   如果你需要使用3X-UI，可以点击这里访问：[aircross/3x-ui](https://github.com/aircross/3x-ui)  
    [![Docker Pulls](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)
 
-默认访问端口http://host:54321
-默认用户名/密码：admin/admin
+默认访问端口http://host:54321    
+默认用户名/密码：admin/admin    
 支持单端口多用户、多协议的 xray 面板，究极缝合怪    
 通过免费的Telegram bot方便快捷地进行监控、管理你的代理服务  
 &#x26A1;`xtls-rprx-vision`与`reality`快速入手请看[这里](https://github.com/aircross/x-ui/wiki/%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE)  
