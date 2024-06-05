@@ -6,7 +6,7 @@
 > 声明：该项目仅供个人学习、交流，请遵守当地法律法规,勿用于非法用途;请勿用于生产环境  
 > 声明：该项目已闭源，介意者请勿使用；如您需要开源代码，请附上您的Github Profile邮箱联系  
 
-# 3X-UI
+## 3X-UI
   如果你需要使用3X-UI，可以点击这里访问：[aircross/3x-ui](https://github.com/aircross/3x-ui)  
    [![Docker Pulls](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)
 
@@ -20,7 +20,7 @@
 
 # 文档目录  
 - [X-UI](#x-ui)
-- [3X-UI](#3x-ui)
+  - [3X-UI](#3x-ui)
 - [文档目录](#文档目录)
 - [功能介绍](#功能介绍)
 - [一键安装](#一键安装)

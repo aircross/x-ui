@@ -7,8 +7,7 @@ This project is a fork of [FranzKafkaYu&#39;s project](https://github.com/FranzK
 If you need more language options ,please open a issue and let me know that
 
  
-
-# 3X-UI
+## 3X-UI
   If you want to use 3X-UI，you can get it here：[aircross/3x-ui](https://github.com/aircross/3x-ui)  
    [![Docker Pulls](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)](https://img.shields.io/docker/pulls/aircross/3x-ui.svg?style=flat-square)
 
