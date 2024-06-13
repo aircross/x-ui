@@ -1,26 +1,19 @@
 {{define "js"}}
-<!-- <script src="{{ .base_path }}assets/vue@2.6.12/vue.min.js" type="application/javascript"></script> -->
-<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.12/vue.min.js" type="application/javascript"></script>
-<!-- <script src="{{ .base_path }}assets/moment/moment.min.js" type="application/javascript"></script> -->
- <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment.js/2.29.1/moment.min.js" type="application/javascript"></script>
-<!-- <script src="{{ .base_path }}assets/ant-design-vue@1.7.2/antd.min.js" type="application/javascript"></script> -->
-<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/ant-design-vue/3.0.0-alpha.16/antd.min.js" type="application/javascript"></script>
-<script src="{{ .base_path }}assets/base64/base64.min.js" type="application/javascript"></script>
-<!--<script src="{{ .base_path }}assets/axios/axios.min.js" type="application/javascript"></script>-->
-<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/axios/0.26.0/axios.min.js" type="application/javascript"></script>
-<script src="{{ .base_path }}assets/qs/qs.min.js" type="application/javascript"></script>
-<!--<script src="{{ .base_path }}assets/qrcode/qrious.min.js" type="application/javascript"></script>-->
-<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrious/4.0.2/qrious.min.js" type="application/javascript"></script>
-<!-- <script src="{{ .base_path }}assets/clipboard/clipboard.min.js" type="application/javascript"></script> -->
-<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/clipboard.js/2.0.10/clipboard.min.js" type="application/javascript"></script>
-<!--<script src="{{ .base_path }}assets/uri/URI.min.js" type="application/javascript"></script>-->
-<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/URI.js/1.19.8/URI.min.js" type="application/javascript"></script>
-<script src="{{ .base_path }}assets/js/axios-init.js?{{ .cur_ver }}" type="application/javascript"></script>
-<script src="{{ .base_path }}assets/js/util/common.js?{{ .cur_ver }}" type="application/javascript"></script>
-<script src="{{ .base_path }}assets/js/util/date-util.js?{{ .cur_ver }}" type="application/javascript"></script>
-<script src="{{ .base_path }}assets/js/util/utils.js?{{ .cur_ver }}" type="application/javascript"></script>
-<script src="{{ .base_path }}assets/js/model/xray.js?{{ .cur_ver }}" type="application/javascript"></script>
-<script src="{{ .base_path }}assets/js/model/models.js?{{ .cur_ver }}" type="application/javascript"></script>
+<script src="{{ .base_path }}assets/vue@2.6.12/vue.min.js"></script>
+<script src="{{ .base_path }}assets/moment/moment.min.js"></script>
+<script src="{{ .base_path }}assets/ant-design-vue@1.7.2/antd.min.js"></script>
+<script src="{{ .base_path }}assets/base64/base64.min.js"></script>
+<script src="{{ .base_path }}assets/axios/axios.min.js"></script>
+<script src="{{ .base_path }}assets/qs/qs.min.js"></script>
+<script src="{{ .base_path }}assets/qrcode/qrious.min.js"></script>
+<script src="{{ .base_path }}assets/clipboard/clipboard.min.js"></script>
+<script src="{{ .base_path }}assets/uri/URI.min.js"></script>
+<script src="{{ .base_path }}assets/js/axios-init.js?{{ .cur_ver }}"></script>
+<script src="{{ .base_path }}assets/js/util/common.js?{{ .cur_ver }}"></script>
+<script src="{{ .base_path }}assets/js/util/date-util.js?{{ .cur_ver }}"></script>
+<script src="{{ .base_path }}assets/js/util/utils.js?{{ .cur_ver }}"></script>
+<script src="{{ .base_path }}assets/js/model/xray.js?{{ .cur_ver }}"></script>
+<script src="{{ .base_path }}assets/js/model/models.js?{{ .cur_ver }}"></script>
 <script>
     const basePath = '{{ .base_path }}';
     axios.defaults.baseURL = basePath;
