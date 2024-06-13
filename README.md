@@ -100,7 +100,7 @@ docker run \
 #3X-UI
 mkdir -p /opt/docker/3x-ui
 docker run \
-    --name x-ui \
+    --name 3x-ui \
     -d \
     --network host \
     --restart=unless-stopped \
