@@ -312,7 +312,7 @@ xray 状态: 运行
 # 广告赞助  
 
 如果你觉得本项目对你有用,而且你也恰巧有这方面的需求,你也可以选择通过我的购买链接赞助我  
-- [搬瓦工GIA高端线路](https://bandwagonhost.com/aff.php?aff=57739),仅推荐购买GIA套餐      
+- [搬瓦工GIA高端线路](https://bandwagonhost.com/aff.php?aff=38140),仅推荐购买GIA套餐      
 - [Cloudcone性价比主机提供商](https://app.cloudcone.com/?ref=2227)  
 - [Spartan三网4837性价比主机](https://billing.spartanhost.net/aff.php?aff=1156)
 
