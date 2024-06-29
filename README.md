@@ -279,7 +279,8 @@ xray 状态: 运行
 - Ubuntu 16+
 - Debian 8+
 
-# 变更记录   
+# 变更记录  
+- 2024.06.29：更新xray-core到最新版本v1.8.16，修改默认Geo为Loyalsoldier/v2ray-rules-dat版本  
 - 2023.07.18：随机生成Reality dest与serverNames,去除微软域名;细化sniffing配置  
 - 2023.06.10：开启TLS时自动复用面板证书与域名;增加证书热重载设定;优化设备限制功能  
 - 2023.04.09：支持Reality;支持新的telegram bot控制指令  
@@ -312,9 +313,12 @@ xray 状态: 运行
 # 广告赞助  
 
 如果你觉得本项目对你有用,而且你也恰巧有这方面的需求,你也可以选择通过我的购买链接赞助我  
-- [搬瓦工GIA高端线路](https://bandwagonhost.com/aff.php?aff=38140),仅推荐购买GIA套餐      
+- [搬瓦工GIA高端线路](https://bandwagonhost.com/aff.php?aff=38140),仅推荐购买GIA套餐   
+- [Spartan三网4837性价比主机](https://billing.spartanhost.net/aff.php?aff=1156)  
+- [Dmit](https://www.dmit.io/aff.php?aff=9771)  
+- [Linode](https://www.linode.com/lp/refer/?r=107a1afa3e657b37fc273df95803557588e7dcc5)  
+- [Vultr](https://www.vultr.com/?ref=7130790)  
 - [Cloudcone性价比主机提供商](https://app.cloudcone.com/?ref=2227)  
-- [Spartan三网4837性价比主机](https://billing.spartanhost.net/aff.php?aff=1156)
 
 
 ## Stargazers over time

@@ -16,6 +16,7 @@ Default visit prot: http://host:54321
 Default username/password: admin/admin    
 
 # Changes   
+- 2024.06.29：update xray-core to v1.8.16, change default geo to Loyalsoldier/v2ray-rules-dat
 - 2023.07.18：Random Reality dest and serverNames;more detailed sniffing settings available  
 - 2023.06.10：Enable TLS will reuse panel's certs and domain;add setting for ocspStapling;refactor device limit  
 - 2023.04.09：Support REALITY for now  
@@ -189,9 +190,12 @@ please input a legal number[0-16]:
 # Sponsor  
 
 if you want to purchase some virtual servers,you can purchase by my aff link:   
-- [BandwagonHost](https://bandwagonhost.com/aff.php?aff=38140)     
-- [Cloudcone](https://app.cloudcone.com/?ref=2227)  
-- [SpartanHost](https://billing.spartanhost.net/aff.php?aff=1156)  
+- [BandwagonHost](https://bandwagonhost.com/aff.php?aff=38140)      
+- [Spartan](https://billing.spartanhost.net/aff.php?aff=1156)  
+- [Dmit](https://www.dmit.io/aff.php?aff=9771)  
+- [Linode](https://www.linode.com/lp/refer/?r=107a1afa3e657b37fc273df95803557588e7dcc5)  
+- [Vultr](https://www.vultr.com/?ref=7130790)  
+- [Cloudcone](https://app.cloudcone.com/?ref=2227)   
 
 ## Stargazers over time
 
