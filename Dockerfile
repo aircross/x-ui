@@ -1,6 +1,12 @@
 FROM golang:1.22-alpine AS builder
 WORKDIR /root
 
+RUN apk --no-cache --update add \
+  build-base \
+  gcc \
+  wget \
+  unzip
+
 COPY . .
 
 ENV CGO_ENABLED=1
@@ -8,11 +14,6 @@ ENV CGO_CFLAGS="-D_LARGEFILE64_SOURCE"
 
 RUN go build main.go
 
-RUN apk --no-cache --update add \
-  build-base \
-  gcc \
-  wget \
-  unzip
 
 RUN chmod +x ./GetXray.sh && \
   ./GetXray.sh
