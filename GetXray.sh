@@ -1,19 +1,19 @@
 #!/bin/sh
 rm -rf ./bin/xray-linux-amd64
 rm -rf ./bin/xray-linux-arm64
-mkdir -p wgettmp
-cd wgettmp
+
+mkdir wgettemp
+cd wgettemp
 wget "https://github.com/XTLS/Xray-core/releases/download/v1.8.18/Xray-linux-64.zip"
 wget "https://github.com/XTLS/Xray-core/releases/download/v1.8.18/Xray-linux-arm64-v8a.zip"
 unzip "Xray-linux-64.zip"
-rm -f "Xray-linux-64.zip" geoip.dat geosite.dat
-mv xray /root/bin/xray-linux-amd64
+rm -f "Xray-linux-64.zip" geoip.dat geosite.dat README.md LICENSE
+mv xray ../bin/xray-linux-amd64
 
 unzip "Xray-linux-arm64-v8a.zip"
-rm -f "Xray-linux-arm64-v8a.zip" geoip.dat geosite.dat
-mv xray /root/bin/xray-linux-arm64
+rm -f "Xray-linux-arm64-v8a.zip" geoip.dat geosite.dat README.md LICENSE
+mv xray ../bin/xray-linux-arm64
 
-cd /root/bin/
 wget https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
 wget https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 wget -O geoip_IR.dat https://github.com/chocolate4u/Iran-v2ray-rules/releases/latest/download/geoip.dat
