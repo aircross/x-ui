@@ -1,4 +1,5 @@
 #!/bin/sh
+cd /root/
 rm -rf ./bin/xray-linux-amd64
 rm -rf ./bin/xray-linux-arm64
 
