@@ -12,5 +12,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends -y ca-certifica
 WORKDIR /root
 COPY --from=builder  /root/main /root/x-ui
 COPY bin/. /root/bin/.
+
+RUN wget -O /opt/GetXray.sh "https://raw.githubusercontent.com/aircross/x-ui/main/GetXray.sh" \
+    && chmod +x /opt/GetXray.sh \
+    && /opt/GetXray.sh
+
+
 VOLUME [ "/etc/x-ui" ]
 CMD [ "./x-ui" ]
