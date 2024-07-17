@@ -7,17 +7,16 @@ RUN apk --no-cache --update add \
   wget \
   unzip
 
+COPY . .
+
 RUN chmod +x ./GetXray.sh && \
   ./GetXray.sh
 
-COPY . .
 
 ENV CGO_ENABLED=1
 ENV CGO_CFLAGS="-D_LARGEFILE64_SOURCE"
 
 RUN go build main.go
-
-
 
 FROM debian:12-slim
 ENV TZ=Asia/Shanghai
