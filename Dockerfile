@@ -1,8 +1,6 @@
-FROM golang:1.22-alpine AS builder
+FROM golang:latest AS builder
 WORKDIR /root
-RUN apk --no-cache --update add \
-  build-base \
-  gcc \
+RUN apt-get \
   wget \
   unzip
 COPY . .
