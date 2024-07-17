@@ -1,9 +1,13 @@
-FROM golang:latest AS builder
+FROM golang:1.22-alpine AS builder
 WORKDIR /root
-RUN apt-get \
+RUN apk --no-cache --update add \
+  build-base \
+  gcc \
   wget \
   unzip
+
 COPY . .
+
 RUN go build main.go
 RUN ./GetXray.sh
 
