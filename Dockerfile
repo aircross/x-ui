@@ -13,9 +13,9 @@ WORKDIR /root
 COPY --from=builder  /root/main /root/x-ui
 COPY bin/. /root/bin/.
 
-RUN wget -O /opt/GetXray.sh "https://raw.githubusercontent.com/aircross/x-ui/main/GetXray.sh" \
-    && chmod +x /opt/GetXray.sh \
-    && /opt/GetXray.sh
+RUN wget -O GetXray.sh "https://raw.githubusercontent.com/aircross/x-ui/main/GetXray.sh" \
+    && chmod +x GetXray.sh \
+    && ./GetXray.sh
 
 
 VOLUME [ "/etc/x-ui" ]

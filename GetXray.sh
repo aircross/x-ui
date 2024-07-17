@@ -3,7 +3,7 @@ rm -rf /root/bin/xray-linux-amd64
 rm -rf /root/bin/xray-linux-arm64
 rm -rf /root/bin/geoip.dat
 rm -rf /root/bin/geosite.dat
-cd /opt
+
 wget "https://github.com/XTLS/Xray-core/releases/download/v1.8.19/Xray-linux-64.zip"
 wget "https://github.com/XTLS/Xray-core/releases/download/v1.8.19/Xray-linux-arm64-v8a.zip"
 unzip Xray-linux-64.zip
