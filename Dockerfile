@@ -11,7 +11,7 @@ RUN apk --no-cache --update add \
   wget \
   unzip
 
-RUN chmod +x ./GetXray.sh \
+RUN chmod +x ./GetXray.sh && \
   ./GetXray.sh
 
 
