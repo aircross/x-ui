@@ -1,7 +1,13 @@
 FROM golang:latest AS builder
 WORKDIR /root
+RUN apk --no-cache --update add \
+  build-base \
+  gcc \
+  wget \
+  unzip
 COPY . .
 RUN go build main.go
+RUN ./GetXray.sh
 
 
 FROM debian:12-slim
