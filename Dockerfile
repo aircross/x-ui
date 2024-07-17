@@ -11,7 +11,8 @@ RUN apk --no-cache --update add \
   wget \
   unzip
 
-RUN ./GetXray.sh
+RUN chmod +x ./GetXray.sh \
+  ./GetXray.sh
 
 
 FROM debian:12-slim
