@@ -11,6 +11,8 @@ RUN apk --no-cache --update add \
   wget \
   unzip
 
+ENV CGO_ENABLED=1
+ENV CGO_CFLAGS="-D_LARGEFILE64_SOURCE"
 RUN chmod +x ./GetXray.sh && \
   ./GetXray.sh
 
