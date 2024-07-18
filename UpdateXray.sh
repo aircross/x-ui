@@ -4,7 +4,8 @@ rm -rf /root/bin/xray-linux-arm64
 rm -rf /root/bin/geoip.dat
 rm -rf /root/bin/geosite.dat
 
-xray_version=`cat xray_version`
+xray_version=$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases/latest | grep tag_name | cut -f4 -d "\"")
+
 echo "xray version: $xray_version"
 
 wget "https://github.com/XTLS/Xray-core/releases/download/${xray_version}/Xray-linux-64.zip"
