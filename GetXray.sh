@@ -4,8 +4,11 @@ rm -rf /root/bin/xray-linux-arm64
 rm -rf /root/bin/geoip.dat
 rm -rf /root/bin/geosite.dat
 
-wget "https://github.com/XTLS/Xray-core/releases/download/v1.8.19/Xray-linux-64.zip"
-wget "https://github.com/XTLS/Xray-core/releases/download/v1.8.19/Xray-linux-arm64-v8a.zip"
+xray_version=`cat xray_version`
+echo "xray version: $xray_version"
+
+wget "https://github.com/XTLS/Xray-core/releases/download/${xray_version}/Xray-linux-64.zip"
+wget "https://github.com/XTLS/Xray-core/releases/download/${xray_version}/Xray-linux-arm64-v8a.zip"
 unzip Xray-linux-64.zip
 rm -rf Xray-linux-64.zip geoip.dat geosite.dat README.md LICENSE
 mv xray /root/bin/xray-linux-amd64
