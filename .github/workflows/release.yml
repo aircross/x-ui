@@ -3,7 +3,7 @@ name: Release X-UI
 on:
   push:
     tags:
-      - "*"
+      - "v*"
   workflow_dispatch:
 
 jobs:
@@ -27,6 +27,17 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.22'
+
+      - name: Prepare
+        id: prepare
+        run: |
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            echo ::set-output name=version::${GITHUB_REF#refs/tags/}
+            echo ::set-output name=ref::${GITHUB_REF#refs/tags/}
+          else
+            echo ::set-output name=version::snapshot
+            echo ::set-output name=ref::${{ github.sha }}
+          fi
 
       - name: Install dependencies
         run: |
@@ -83,7 +94,7 @@ jobs:
           cd x-ui/bin
           
           # Download dependencies
-          Xray_URL="https://github.com/XTLS/Xray-core/releases/download/v1.8.16/"
+          Xray_URL="https://github.com/XTLS/Xray-core/releases/download/${{ steps.prepare.outputs.version }}/"
           if [ "${{ matrix.platform }}" == "amd64" ]; then
             wget ${Xray_URL}Xray-linux-64.zip
             unzip Xray-linux-64.zip
@@ -124,13 +135,13 @@ jobs:
           cd ../..
           
       - name: Package
-        run: tar -zcvf x-ui-linux-${{ matrix.platform }}.tar.gz x-ui
+        run: tar -zcvf x-ui-${{ steps.prepare.outputs.version }}-linux-${{ matrix.platform }}.tar.gz x-ui
         
       - name: Upload files to GH release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.RELEASE_TOKEN }}
           tag: ${{ github.ref }}
-          file: x-ui-linux-${{ matrix.platform }}.tar.gz
-          asset_name: x-ui-linux-${{ matrix.platform }}.tar.gz
+          file: x-ui-${{ steps.prepare.outputs.version }}-linux-${{ matrix.platform }}.tar.gz
+          asset_name: x-ui-${{ steps.prepare.outputs.version }}-linux-${{ matrix.platform }}.tar.gz
           prerelease: true
